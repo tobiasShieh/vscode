@@ -27,7 +27,7 @@ namespace jj30
     
         //count_if就是算法，用于统计满足条件的元素的个数
         //begin和end可以获取迭代器；
-        //less就是一个仿函数；
+        //less就是一个仿函数，用于比较两个数大小；
         //bind2nd和not1都是仿函数适配器，前置用于绑定第二参数，后者用于取反
         cout << count_if(vi.begin(), vi.end(), 
                 not1(bind2nd(less<int>(), 40)));	//5
